@@ -1,0 +1,8 @@
+.blog {
+  article + article {
+    margin-top: 50px;
+  }
+  .tag {
+    padding-right: 0.25em;
+  }
+}

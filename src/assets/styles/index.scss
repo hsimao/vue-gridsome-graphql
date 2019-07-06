@@ -1,0 +1,142 @@
+// $typography 字體排版
+body {
+  color: $colorFont;
+  font-family: $fontStyle;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+p,
+.text {
+  font-size: 14px;
+}
+
+// common
+body * {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+a {
+  color: $colorSecondary;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hidden-pad {
+  @include rwd(pad) {
+    display: none !important;
+  }
+}
+
+.display-pad {
+  @include rwd(pad) {
+    display: block !important;
+  }
+}
+
+// icon
+[class*="icon-"] {
+  display: inline-block;
+}
+
+[class*="svg-"] {
+  @include flexCenter;
+}
+
+// btn
+.btn {
+  padding: 11px 20px 10px 20px;
+  transition: all 0.6s;
+  border: solid 1px $colorBlack;
+  border-radius: 200px;
+  background-color: $colorBlack;
+  color: $colorWhite;
+  line-height: 1;
+  font-size: 14px;
+  user-select: none;
+  -webkit-user-drag: none;
+  &:hover {
+    border: solid 1px $colorBlack;
+    background-color: $colorWhite;
+    color: $colorBlack;
+  }
+}
+
+// 外部字體
+/* latin-ext */
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cinzel Regular"), local("Cinzel-Regular"),
+    url(https://fonts.gstatic.com/s/cinzel/v8/8vIJ7ww63mVu7gt7-GT7PkRXM8Xx.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cinzel Regular"), local("Cinzel-Regular"),
+    url(https://fonts.gstatic.com/s/cinzel/v8/8vIJ7ww63mVu7gt79mT7PkRXMw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+// /* sampled usage */
+// @font-face {
+//   font-family: 'Cinzel';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url(https://fonts.gstatic.com/stats/Cinzel/normal/400);
+//   unicode-range: U+20;
+// }
+/* latin-ext */
+
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Cinzel Black"), local("Cinzel-Black"),
+    url(https://fonts.gstatic.com/s/cinzel/v8/8vIK7ww63mVu7gtzdUPuHWZaGf_4-ial.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Cinzel Black"), local("Cinzel-Black"),
+    url(https://fonts.gstatic.com/s/cinzel/v8/8vIK7ww63mVu7gtzdUPuE2ZaGf_4-g.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
