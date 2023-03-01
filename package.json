@@ -9,7 +9,7 @@
   "dependencies": {
     "@gridsome/source-contentful": "^0.4.0",
     "@gridsome/source-filesystem": "^0.5.0",
-    "@gridsome/transformer-remark": "^0.3.2",
+    "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.6.0",
     "vue-disqus": "^3.0.5"
   },
